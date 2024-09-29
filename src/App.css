@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  background-color: #00336a;
+  color: white;
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+.container-principal {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3px;
+  border-radius: 50%;
+}
+
+/*Inicio styles*/
+.container-inicio {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 40px;
+  background-image: url("./assets/bckInicio.png");
+  width: 90%;
+  height: 20rem;
+}
+
+/*Button Inicio*/
+
+.button-33 {
+  background-color: #0e2dac;
+  border-radius: 100px;
+  box-shadow: #010925 0 -25px 18px -14px inset, #011255 0 1px 2px,
+    #010b36 0 2px 4px, #031044 0 4px 8px, #000c3b 0 8px 16px,
+    #222d5a 0 16px 32px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: #031350 0 -25px 18px -14px inset, #031768 0 1px 2px,
+    #011257 0 2px 4px, #010f47 0 4px 8px, #010f49 0 8px 16px,
+    #000d3f 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/*Nossosservicos styles*/
+.container-ns {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container-img {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+.img-ns {
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+}
+.img-ns:hover {
+  transform: scale(1.1); /* Estado inicial */
+  transition: transform 0.5s ease-in-out;
+}
+.bloco {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+  margin: 50px;
+}
+.texto-ns {
+  background: linear-gradient(to right, #001f99, #01092b);
+  width: 50%;
+  padding: 80px;
+  text-align: start;
+  border-radius: 20px;
+}
+.texto-ns h1 {
+  font-size: 70px;
+}
+.texto-ns p {
+  font-size: large;
+  line-height: 1.5;
+}
+/*quem somos styles*/
+.container-qs {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.container-qs label{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.creditos{
+  background: linear-gradient(to top,#020f46 , #014fa3);
+
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.forms-qs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  
+  flex-direction: column;
+  border-radius: 50px;
+  padding: 60px;
+  background: linear-gradient(to top, #014fa3, #020f46);
+}
+
+.input-qs{
+  background-color: transparent;
+  padding: 10px;
+  
+  width: 50%;
+  font-size: 20px;
+  border: none;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  border-radius: 50px;
+  color: white;
+
+}
+
+.textarea-qs{
+  resize: none;
+  width: 50%;
+  height: 25%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px  #ffffff;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.img-qs {
+  width: 15%;
+
+  border-radius: 50%;
+}
+
+.h3-qs {
+  width: 80%;
+}
+
+
+/*responsividade*/
+@media (max-width: 768px) {
+  /* Estilos para telas menores que 768px, como o iPhone XR */
+  
+ 
+  .container-principal {
+    width: 100%;
+    flex-direction: column;
+  }
+  .container-inicio {
+    width: 100%;
+    font-size: 25px;
+  }
+  .img-ns {
+    width: 100%;
+  }
+  .texto-ns {
+    width: 100%;
+  }
+  .bloco {
+    width: 100%;
+    justify-content: center;
+  }
+  .texto-ns{
+    padding: none;
+  }
+
+
+  .forms-qs{
+    width: 100%;
+  }
+}
